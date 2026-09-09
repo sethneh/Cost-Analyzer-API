@@ -1,5 +1,5 @@
-from fastapi import fastAPI
-app= fastAPI()
+from fastapi import FastAPI
+app= FastAPI()
 
 @app.get("/customers/{customer_id}")
 def get_cost(customer_id: int):
@@ -11,4 +11,4 @@ def get_cost(customer_id: int):
     "currency": "USD"
   }
 
-  return total_cost
+  return custome["total_cost"]
