@@ -1,5 +1,5 @@
-from fastapi import FASTAPI
-app= FASTAPI()
+from fastapi import fastAPI
+app= fastAPI()
 
 @app.get("/customers/{customer_id}")
 def get_cost(customer_id: int):
